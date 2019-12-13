@@ -3,7 +3,6 @@
 <?import com.jfoenix.controls.JFXButton?>
 <?import com.jfoenix.controls.JFXHamburger?>
 <?import com.jfoenix.controls.JFXTextField?>
-<?import java.net.URL?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
@@ -13,7 +12,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="ventana2" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ControlUrano">
+<AnchorPane fx:id="ventana2" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: white;" stylesheets="@../application/application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ControlUrano">
    <children>
       <AnchorPane fx:id="menu" prefHeight="600.0" prefWidth="245.0" style="-fx-background-color: #ffff00;">
          <children>
@@ -48,7 +47,7 @@
                         <Insets top="20.0" />
                      </VBox.margin>
                   </JFXButton>
-                  <JFXButton fx:id="btnSalir" layoutX="10.0" layoutY="163.0" onMouseClicked="#salir" prefHeight="51.0" prefWidth="355.0" styleClass="titulo" text="Somos baratos">
+                  <JFXButton fx:id="menuSomos" layoutX="10.0" layoutY="163.0" onMouseClicked="#salir" prefHeight="51.0" prefWidth="355.0" styleClass="titulo" text="Somos baratos">
                      <font>
                         <Font size="24.0" />
                      </font>
@@ -131,8 +130,4 @@
          </right>
       </BorderPane>
    </children>
-   <stylesheets>
-      <URL value="@../application.css" />
-      <URL value="@../application/application.css" />
-   </stylesheets>
 </AnchorPane>
